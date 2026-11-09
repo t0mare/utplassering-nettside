@@ -110,7 +110,7 @@ curl -sI https://github.com     # skal svare HTTP/2 200
 Lag en egen bruker for runneren. Den skal **ikke** ha sudo og **ikke** være med i `docker`-gruppen.
 
 ```bash
-sudo apt update && sudo apt install -y curl tar git rsync
+sudo dnf update && sudo dnf install curl tar git rsync
 sudo useradd -m -s /bin/bash runner
 sudo -iu runner
 mkdir actions-runner && cd actions-runner
